@@ -1,0 +1,117 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L FP-Back:FP-Back-Con U1
+U 1 1 5D8DF866
+P 3900 2500
+F 0 "U1" H 3461 2596 50  0000 R CNN
+F 1 "FP-Back-Con" H 3461 2505 50  0000 R CNN
+F 2 "Fairphone-Back:Fairphone-Back" H 3900 2350 50  0001 C CNN
+F 3 "" H 3900 2350 50  0001 C CNN
+	1    3900 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_A J1
+U 1 1 5D8DFFC6
+P 2050 2350
+F 0 "J1" H 2107 2817 50  0000 C CNN
+F 1 "USB_A" H 2107 2726 50  0000 C CNN
+F 2 "Connector_USB:USB_A_Stewart_SS-52100-001_Horizontal" H 2200 2300 50  0001 C CNN
+F 3 " ~" H 2200 2300 50  0001 C CNN
+	1    2050 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_A J2
+U 1 1 5D8E8719
+P 5950 2600
+F 0 "J2" H 6007 3067 50  0000 C CNN
+F 1 "USB_A" H 6007 2976 50  0000 C CNN
+F 2 "Connector_USB:USB_A_CNCTech_1001-011-01101_Horizontal" H 6100 2550 50  0001 C CNN
+F 3 " ~" H 6100 2550 50  0001 C CNN
+	1    5950 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5D8EC09E
+P 4300 3000
+F 0 "#PWR0101" H 4300 2750 50  0001 C CNN
+F 1 "GND" H 4305 2827 50  0000 C CNN
+F 2 "" H 4300 3000 50  0001 C CNN
+F 3 "" H 4300 3000 50  0001 C CNN
+	1    4300 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 2350 4300 2350
+Wire Wire Line
+	4300 2350 4300 2800
+Wire Wire Line
+	4150 2250 6250 2250
+Wire Wire Line
+	6250 2250 6250 2400
+Wire Wire Line
+	5550 3150 5850 3150
+Wire Wire Line
+	5950 3150 5950 3000
+Wire Wire Line
+	4300 2800 2050 2800
+Wire Wire Line
+	2050 2800 2050 2750
+Connection ~ 4300 2800
+Wire Wire Line
+	4300 2800 4300 3000
+Wire Wire Line
+	4150 2550 4150 2650
+Wire Wire Line
+	2750 2650 2750 2350
+Wire Wire Line
+	2750 2350 2350 2350
+Wire Wire Line
+	2750 2650 4150 2650
+Wire Wire Line
+	4150 2450 4200 2450
+Wire Wire Line
+	4200 2450 4200 2700
+Wire Wire Line
+	4200 2700 2500 2700
+Wire Wire Line
+	2500 2700 2500 2450
+Wire Wire Line
+	2500 2450 2350 2450
+Wire Wire Line
+	4150 2150 4150 2050
+Wire Wire Line
+	4150 2050 2350 2050
+Wire Wire Line
+	2350 2050 2350 2150
+Wire Wire Line
+	4300 2800 5550 2800
+Wire Wire Line
+	5550 2800 5550 3150
+Wire Wire Line
+	1950 2750 1950 2800
+Wire Wire Line
+	1950 2800 2050 2800
+Connection ~ 2050 2800
+Wire Wire Line
+	5850 3000 5850 3150
+Connection ~ 5850 3150
+Wire Wire Line
+	5850 3150 5950 3150
+$EndSCHEMATC

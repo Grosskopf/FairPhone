@@ -88,11 +88,11 @@ X Shield 5 -100 -400 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# FP-Back_FP-Back-Con
+# Multiboard-rescue_FP-Back-Con-FP-Back
 #
-DEF FP-Back_FP-Back-Con U 0 40 Y Y 1 F N
+DEF Multiboard-rescue_FP-Back-Con-FP-Back U 0 40 Y Y 1 F N
 F0 "U" 0 -150 50 H V C CNN
-F1 "FP-Back_FP-Back-Con" 0 -240 50 H V C CNN
+F1 "Multiboard-rescue_FP-Back-Con-FP-Back" 0 -240 50 H V C CNN
 F2 "" 0 -150 50 H I C CNN
 F3 "" 0 -150 50 H I C CNN
 DRAW

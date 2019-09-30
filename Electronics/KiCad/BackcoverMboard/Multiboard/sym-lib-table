@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Multiboard-rescue)(type Legacy)(uri ${KIPRJMOD}/Multiboard-rescue.lib)(options "")(descr ""))
+)

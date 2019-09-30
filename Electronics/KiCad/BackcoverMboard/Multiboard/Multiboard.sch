@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L FP-Back:FP-Back-Con U1
+L Multiboard-rescue:FP-Back-Con-FP-Back U1
 U 1 1 5D8F35EC
 P 1100 1200
 F 0 "U1" H 1083 1775 50  0000 C CNN
@@ -31,7 +31,7 @@ U 1 1 5D8F4781
 P 1850 1050
 F 0 "J1" H 1930 1092 50  0000 L CNN
 F 1 "Conn_01x05" H 1930 1001 50  0000 L CNN
-F 2 "Fairphone-Back:Pad 01x05" H 1850 1050 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 1850 1050 50  0001 C CNN
 F 3 "~" H 1850 1050 50  0001 C CNN
 	1    1850 1050
 	1    0    0    -1  
@@ -51,43 +51,18 @@ Wire Wire Line
 Wire Wire Line
 	1400 850  1650 850 
 Wire Wire Line
-	1350 1050 1450 1050
-Wire Wire Line
-	1450 1050 1450 950 
-Wire Wire Line
 	1450 950  1650 950 
 Wire Wire Line
-	1350 1150 1500 1150
-Wire Wire Line
-	1500 1150 1500 1050
-Wire Wire Line
-	1500 1050 1650 1050
-Wire Wire Line
 	1350 1250 1550 1250
-Wire Wire Line
-	1550 1250 1550 1150
-Wire Wire Line
-	1550 1150 1650 1150
 $Comp
 L Connector:Conn_01x05_Male J2
 U 1 1 5D8F6C29
 P 2550 1050
 F 0 "J2" H 2658 1431 50  0000 C CNN
 F 1 "Conn_01x05_Male" H 2658 1340 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 2550 1050 50  0001 C CNN
+F 2 "Fairphone-Back:Pad 01x05" H 2550 1050 50  0001 C CNN
 F 3 "~" H 2550 1050 50  0001 C CNN
 	1    2550 1050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:USB_A J6
-U 1 1 5D8F76B3
-P 5100 900
-F 0 "J6" H 5157 1367 50  0000 C CNN
-F 1 "USB_A" H 5157 1276 50  0000 C CNN
-F 2 "Connector_USB:USB_A_Stewart_SS-52100-001_Horizontal" H 5250 850 50  0001 C CNN
-F 3 " ~" H 5250 850 50  0001 C CNN
-	1    5100 900 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -96,7 +71,7 @@ U 1 1 5D8FA5E5
 P 3850 1000
 F 0 "J4" H 3768 575 50  0000 C CNN
 F 1 "Conn_01x05" H 3768 666 50  0000 C CNN
-F 2 "Fairphone-Back:Pad 01x05" H 3850 1000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 3850 1000 50  0001 C CNN
 F 3 "~" H 3850 1000 50  0001 C CNN
 	1    3850 1000
 	-1   0    0    1   
@@ -107,7 +82,7 @@ U 1 1 5D8FADFA
 P 3000 1100
 F 0 "J3" H 3108 1481 50  0000 C CNN
 F 1 "Conn_01x05_Male" H 3108 1390 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 3000 1100 50  0001 C CNN
+F 2 "Fairphone-Back:Pad 01x05" H 3000 1100 50  0001 C CNN
 F 3 "~" H 3000 1100 50  0001 C CNN
 	1    3000 1100
 	1    0    0    -1  
@@ -135,11 +110,7 @@ Wire Wire Line
 Wire Wire Line
 	4050 800  5400 800 
 Wire Wire Line
-	5400 800  5400 700 
-Wire Wire Line
-	4050 900  5400 900 
-Wire Wire Line
-	4050 1000 5400 1000
+	4050 1000 4550 1000
 Wire Wire Line
 	4050 1100 4200 1100
 Wire Wire Line
@@ -166,4 +137,51 @@ Wire Wire Line
 Connection ~ 4200 1100
 Wire Wire Line
 	4200 1100 5100 1100
+Wire Wire Line
+	1450 1050 1450 950 
+Wire Wire Line
+	1350 1050 1450 1050
+Wire Wire Line
+	1350 1150 1650 1150
+Wire Wire Line
+	1550 1250 1550 1050
+Wire Wire Line
+	1550 1050 1650 1050
+Wire Wire Line
+	5400 800  5400 700 
+$Comp
+L Connector:USB_A J6
+U 1 1 5D8F76B3
+P 5100 900
+F 0 "J6" H 5157 1367 50  0000 C CNN
+F 1 "USB_A" H 5157 1276 50  0000 C CNN
+F 2 "Connector_USB:USB_A_Stewart_SS-52100-001_Horizontal" H 5250 850 50  0001 C CNN
+F 3 " ~" H 5250 850 50  0001 C CNN
+	1    5100 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 900  4650 1050
+Wire Wire Line
+	4650 1050 5400 1050
+Wire Wire Line
+	5400 1050 5400 1000
+Wire Wire Line
+	4550 1000 4550 950 
+Wire Wire Line
+	4550 950  5400 950 
+Wire Wire Line
+	5400 950  5400 900 
+Wire Wire Line
+	4650 1050 4650 2050
+Connection ~ 4650 1050
+Wire Wire Line
+	4350 2050 4650 2050
+Wire Wire Line
+	4050 900  4650 900 
+Wire Wire Line
+	4550 1000 4550 1950
+Wire Wire Line
+	4350 1950 4550 1950
+Connection ~ 4550 1000
 $EndSCHEMATC
